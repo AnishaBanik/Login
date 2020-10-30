@@ -1,0 +1,41 @@
+﻿@model Login;
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    @{
+        Layout = null;
+    }
+
+
+</head>
+
+<body>
+
+    
+        @using (Html.BeginForm())
+        {
+             
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>@Html.TextBoxFor(model => model.Name)</td>
+        </tr>
+        <tr>
+            <td>EmailId</td>
+            <td>@Html.TextBoxFor(model => model.Email)</td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>@Html.TextBoxFor(model => model.Password)</td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Register"/> </td>
+    </table>
+        }
+       
+</body>
+
+</html>
